@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Lost Twin Lakes Submerged Leaves",
+    "width": 2560,
+    "height": 1440,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko 45mm F1.8",
+    "latitude": 44.22010216257765,
+    "longitude": -84.71274533850637
+  },
+  {
+    "id": 2,
+    "title": "Winter Lake Huron Shore",
+    "width": 2016,
+    "height": 1440,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko 45mm F1.8",
+    "latitude": 44.00218627088719,
+    "longitude": -83.09876229022755
+  },
+  {
+    "id": 3,
+    "title": "Stormhead Over North Austin",
+    "width": 1800,
+    "height": 1440,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko 45mm F1.8",
+    "latitude": 30.29753164493532,
+    "longitude": -97.70705412863036
+  },
+  {
+    "id": 4,
+    "title": "City Forest Park Boardwalk",
+    "width": 1440,
+    "height": 2560,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko 45mm F1.8",
+    "latitude": 43.674867951645595,
+    "longitude": -84.25200642975038
+  },
+  {
+    "id": 5,
+    "title": "Chippewa Nature Center Parking Lot",
+    "width": 2560,
+    "height": 1440,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko 45mm F1.8",
+    "latitude": 43.600095727986606,
+    "longitude": -84.29166144816959
+  }
+]

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Alex Hiatt Photography</title>
+  <link rel="stylesheet" href="./libs/normalize.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+  <body class="tail__background_black"></body>
+  <script type="module">
+    import { html, render } from 'https://npm.reversehttp.com/htm/preact';
+    import Home from './routes/Home.js';
+    render(html`<${Home}/>`, document.body);
+  </script>
+</html>
