@@ -7,7 +7,7 @@ export default ({
     ${photos.map(photo => html`
       <a key="${photo.id}" href="photos?id=${photo.id}">
         <img
-          src="${photo.id}"
+          src="./img/previews/${photo.id}"
           alt="preview ${photo.id}"
           class="gallery__preview_img"
         >

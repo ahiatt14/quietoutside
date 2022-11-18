@@ -9,10 +9,18 @@ export default ({}) => {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    const fetchPhotoManifest = async () => {
-      const response = await fetch('https://ahphotography.surge.sh/photoManifest.json');
-      
-    }
+      console.log("what is up");
+      const fetchPhotoManifest = async () => {
+        const response = await fetch('https://ahphotography.surge.sh/photoManifest.json');
+        const photos = await response.json();
+        setPhotos(photos);
+      }
+      fetchPhotoManifest();
   });
 
+  return html`
+    <${Gallery}
+      photos=${photos}
+    />
+  `;  
 }
