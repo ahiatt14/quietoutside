@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+}
+
+.gallery {
+  margin: 5vh auto;
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3vw;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6vw;
+  }
+}
+
+.preview {
+  width: 100%;
+  height: auto;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  overflow: hidden;
+}
+
+.preview__img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}

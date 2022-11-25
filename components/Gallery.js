@@ -5,13 +5,21 @@ export default ({
 }) => html`
   <div class="gallery">
     ${photos.map(photo => html`
-      <a key="${photo.id}" href="photos?id=${photo.id}">
+      <a
+        key="${photo.id}"
+        href="/img/full/${photo.id}.jpg"
+        class="preview"
+      >
+      ${html`
         <img
-          src="./img/previews/${photo.id}"
+          src="./img/previews/${photo.id}.jpg"
           alt="preview ${photo.id}"
-          class="gallery__preview_img"
-        >
+          class="preview__img"
+        />
+      `}
       </a>
     `)}
   </div>
 `;
+
+//href="photo?id=${photo.id}"
