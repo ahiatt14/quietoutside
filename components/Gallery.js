@@ -1,4 +1,4 @@
-import { html } from 'https://npm.reversehttp.com/htm/preact';
+import { html } from "https://unpkg.com/htm/preact/index.mjs?module";
 
 export default ({
   photos = []
@@ -7,7 +7,7 @@ export default ({
     ${photos.map(photo => html`
       <a
         key="${photo.id}"
-        href="/img/full/${photo.id}.jpg"
+        href="details?photo=${photo.id}"
         class="preview"
       >
       ${html`

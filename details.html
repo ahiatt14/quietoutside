@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Alex Hiatt Photography</title>
   <link rel="stylesheet" href="./libs/normalize.css" />
+  <link rel="stylesheet" href="./styles/details.css" />
 </head>
   <body class="tail__background_black"></body>
   <script type="module">
-    import { html, render } from 'https://npm.reversehttp.com/htm/preact';
+    import { h, render } from 'https://unpkg.com/preact@latest?module';
+    import htm from "https://unpkg.com/htm@latest/dist/htm.module.js?module";
     import Details from './routes/Details.js';
 
-    render(html`<${Details}/>`, document.body);
+    const html = htm.bind(h);
+
+    const params = new URLSearchParams(window.location.search);
+
+    render(html`<${Details} photoId=${params.get("photo")} />`, document.body);
   </script>
 </html>
