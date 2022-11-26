@@ -9,7 +9,7 @@ export default ({ photoId }) => {
       const fetchPhotoManifest = async () => {
         const response = await fetch('https://ahphotography.surge.sh/photoManifest.json');
         const photos = await response.json();
-        setPhoto(photos.find(photo => photo.id === parseInt(photoId)));
+        setPhoto(photos.find(photo => photo.id === photoId));
       };
       fetchPhotoManifest();
     },
@@ -19,6 +19,7 @@ export default ({ photoId }) => {
   if (photo === undefined) window.location = "/";
 
   return html`
+
     <p>${photo.title}</p>
   `;
 };

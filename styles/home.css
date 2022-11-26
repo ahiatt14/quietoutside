@@ -3,8 +3,8 @@ body {
 }
 
 .gallery {
-  margin: 5vh auto;
-  width: 70vw;
+  margin: 3vw auto;
+  width: 85vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3vw;
@@ -14,6 +14,13 @@ body {
   .gallery {
     grid-template-columns: 1fr 1fr;
     grid-gap: 6vw;
+  }
+}
+
+@media (hover: hover) {
+  .preview__img--obscured {
+    filter: blur(0.1rem);
+    opacity: 0.9;
   }
 }
 
@@ -29,4 +36,5 @@ body {
   width: 100%;
   object-fit: cover;
   vertical-align: bottom;
+  transition: blur,opacity 0.3s ease-in-out;
 }

@@ -16,7 +16,8 @@
     const html = htm.bind(h);
 
     const params = new URLSearchParams(window.location.search);
+    const photoId = parseInt(params.get("photo"));
 
-    render(html`<${Details} photoId=${params.get("photo")} />`, document.body);
+    render(html`<${Details} photoId=${photoId} />`, document.body);
   </script>
 </html>
