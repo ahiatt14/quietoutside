@@ -2,51 +2,231 @@
   {
     "id": 1,
     "title": "Lost Twin Lakes Submerged Leaves",
-    "width": 2560,
-    "height": 1440,
+    "width": 4576,
+    "height": 2576,
     "camera": "Panasonic GX1",
-    "lens": "Olympus M.Zuiko 45mm F1.8",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
     "latitude": 44.22010216257765,
     "longitude": -84.71274533850637
   },
   {
     "id": 2,
     "title": "Winter Lake Huron Shore",
-    "width": 2016,
-    "height": 1440,
+    "width": 3606,
+    "height": 2576,
     "camera": "Panasonic GX1",
-    "lens": "Olympus M.Zuiko 45mm F1.8",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
     "latitude": 44.00218627088719,
     "longitude": -83.09876229022755
   },
   {
     "id": 3,
     "title": "Stormhead Over North Austin",
-    "width": 1800,
-    "height": 1440,
+    "width": 4310,
+    "height": 3448,
     "camera": "Panasonic GX1",
-    "lens": "Olympus M.Zuiko 45mm F1.8",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
     "latitude": 30.29753164493532,
     "longitude": -97.70705412863036
   },
   {
     "id": 4,
     "title": "City Forest Park Boardwalk",
-    "width": 1440,
-    "height": 2560,
+    "width": 2576,
+    "height": 4576,
     "camera": "Panasonic GX1",
-    "lens": "Olympus M.Zuiko 45mm F1.8",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
     "latitude": 43.674867951645595,
     "longitude": -84.25200642975038
   },
   {
     "id": 5,
     "title": "Chippewa Nature Center Parking Lot",
-    "width": 2560,
-    "height": 1440,
+    "width": 2576,
+    "height": 4576,
     "camera": "Panasonic GX1",
-    "lens": "Olympus M.Zuiko 45mm F1.8",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
     "latitude": 43.600095727986606,
     "longitude": -84.29166144816959
+  },
+  {
+    "id": 6,
+    "title": "Texas Hills Streambed",
+    "width": 4576,
+    "height": 2576,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
+    "latitude": 30.30920832044579,
+    "longitude": -97.81923248863032
+  },
+  {
+    "id": 7,
+    "title": "Chippewa River",
+    "width": 4519,
+    "height": 2544,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko 40-150mm F4-F5.6",
+    "latitude": 43.60251420511742,
+    "longitude": -84.29116085776153
+  },
+  {
+    "id": 8,
+    "title": "Phragmites Near Great Egret Roost",
+    "width": 4576,
+    "height": 2576,
+    "camera": "Panasonic GX1",
+    "lens": "Meike Fixed 25mm F1.8",
+    "latitude": 43.60368564209014,
+    "longitude": -84.24951083179398
+  },
+  {
+    "id": 9,
+    "title": "Cut Grass Near Great Egret Roost",
+    "width": 4576,
+    "height": 2576,
+    "camera": "Panasonic GX1",
+    "lens": "Meike Fixed 25mm F1.8",
+    "latitude": 43.60368564209014,
+    "longitude": -84.24951083179398
+  },
+  {
+    "id": 10,
+    "title": "Lost Twin Lakes Trail Pines",
+    "width": 4576,
+    "height": 2576,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
+    "latitude": 44.215340377103225,
+    "longitude": -84.71069016240337
+  },
+  {
+    "id": 11,
+    "title": "Kiwassee Lake Bottom",
+    "width": 3424,
+    "height": 3424,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko 40-150mm F4-F5.6",
+    "latitude": 43.616705089269324,
+    "longitude": -84.17282065594334
+  },
+  {
+    "id": 12,
+    "title": "Light Near Great Egret Roost",
+    "width": 2956,
+    "height": 2217,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko 40-150mm F4-F5.6",
+    "latitude": 43.60368564209014,
+    "longitude": -84.24951083179398
+  },
+  {
+    "id": 13,
+    "title": "Lake Austin From Mt Bonnell",
+    "width": 4591,
+    "height": 3061,
+    "camera": "Panasonic GX1",
+    "lens": "SLR Magic HyperPrime Fixed 10mm T2.1",
+    "latitude": 30.32207416024974,
+    "longitude": -97.77363225506384
+  },
+  {
+    "id": 14,
+    "title": "Bald-Faced Hornet",
+    "width": 1889,
+    "height": 1063,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
+    "latitude": 43.60693135988396,
+    "longitude": -84.28580350228009
+  },
+  {
+    "id": 15,
+    "title": "Curled Up Fern",
+    "width": 4575,
+    "height": 1525,
+    "camera": "Panasonic GX1",
+    "lens": "SLR Magic MicroPrime Fixed 18mm T2.8",
+    "latitude": 30.424969603047426,
+    "longitude": -97.85522567634602
+  },
+  {
+    "id": 16,
+    "title": "Cow Pasture Fence",
+    "width": 3424,
+    "height": 3424,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
+    "latitude": 43.605156768494346,
+    "longitude": -84.28828667673747
+  },
+  {
+    "id": 17,
+    "title": "North Lake Austin From Mount Bonnell",
+    "width": 2643,
+    "height": 2643,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
+    "latitude": 30.32207416024974,
+    "longitude": -97.77363225506384
+  },
+  {
+    "id": 18,
+    "title": "Cut Field Near Great Egret Roost",
+    "width": 3424,
+    "height": 3424,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
+    "latitude": 43.60368564209014,
+    "longitude": -84.24951083179398
+  },
+  {
+    "id": 19,
+    "title": "Alley in Mueller, Austin",
+    "width": 4431,
+    "height": 1854,
+    "camera": "Panasonic GX1",
+    "lens": "SLR Magic MicroPrime Fixed 18mm T2.8",
+    "latitude": 30.301181488599028,
+    "longitude": -97.7031308609711
+  },
+  {
+    "id": 20,
+    "title": "Lifebouy at Meron Marsh",
+    "width": 3424,
+    "height": 1926,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
+    "latitude": 43.59436959658433,
+    "longitude": -84.2888814211488
+  },
+  {
+    "id": 21,
+    "title": "Leaves on Sand at Kiwassee Lake",
+    "width": 1926,
+    "height": 3424,
+    "camera": "Panasonic GX1",
+    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
+    "latitude": 43.61797109635435,
+    "longitude": -84.17233303645942
+  },
+  {
+    "id": 22,
+    "title": "Apartment Courtyard, Austin",
+    "width": 4592,
+    "height": 1531,
+    "camera": "Panasonic GX1",
+    "lens": "SLR Magic HyperPrime Fixed 10mm T2.1",
+    "latitude": 30.283828352591925,
+    "longitude": -97.71557756399658
+  },
+  {
+    "id": 23,
+    "title": "Stormhead Over North Austin 2",
+    "width": 4576,
+    "height": 1915,
+    "camera": "Panasonic GX1",
+    "lens": "SLR Magic HyperPrime Fixed 10mm T2.1",
+    "latitude": 30.29753164493532,
+    "longitude": -97.70705412863036
   }
 ]
