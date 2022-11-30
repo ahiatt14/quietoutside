@@ -10,7 +10,7 @@ export default ({}) => {
   useEffect(() => {
     if (photos.length > 0) return; 
     const fetchPhotoManifest = async () => {
-      const response = await fetch('https://ahphotography.surge.sh/photoManifest.json');
+      const response = await fetch('https://quietoutside.github.io/photoManifest.json');
       const photos = await response.json();
       setPhotos(photos);
     };
