@@ -8,7 +8,7 @@ export default ({ photoId }) => {
 
   useEffect(() => {
       const fetchPhotoManifest = async () => {
-        const response = await fetch('https://quietoutside.space/photoManifest.json');
+        const response = await fetch('/photoManifest.json');
         const photos = await response.json();
         setPhoto(photos.find(photo => photo.id === photoId));
         setRandomId(Math.ceil(Math.random() * photos.length));
