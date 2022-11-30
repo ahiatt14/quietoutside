@@ -50,15 +50,18 @@ export default ({ photoId }) => {
         </p>
         <ul class="info__actions">
           <li class="info__action">
-            <a class="info__action--link" href="/img/full/${photo.id}.jpg">
+            <a class="info__action--link" target="_blank" href="/img/full/${photo.id}.jpg">
               <span class="material-icons info__action-icon">fullscreen</span> download full size
             </a>
           </li>
           <li class="info__action">
-            <span class="material-icons info__action-icon">place</span> location
+            <a class="info__action--link" target="_blank" href="https://www.google.com/maps/place/${photo.latitude},${photo.longitude}">
+              <span class="material-icons info__action-icon">place</span> location
+            </a>
           </li>
         </ul>
       </section>
+      <p class="copyright-notice">${`© 2020-2022 Alex Hiatt`}</p>
     </div>
   `;
 };

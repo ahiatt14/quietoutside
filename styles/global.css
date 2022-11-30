@@ -1,0 +1,17 @@
+:root {
+  --color__dark-mode-text: rgb(244, 253, 252);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.copyright-notice {
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+}
