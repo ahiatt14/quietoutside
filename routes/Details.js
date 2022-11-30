@@ -1,16 +1,17 @@
 import { html } from "https://unpkg.com/htm/preact/index.mjs?module";
-import { Fragment } from 'https://unpkg.com/preact@latest/dist/preact.module.js?module';
 import { useState, useEffect } from 'https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module';
 
 export default ({ photoId }) => {
 
   const [photo, setPhoto] = useState({});
+  const [randomId, setRandomId] = useState(1);
 
   useEffect(() => {
       const fetchPhotoManifest = async () => {
         const response = await fetch('https://ahphotography.surge.sh/photoManifest.json');
         const photos = await response.json();
         setPhoto(photos.find(photo => photo.id === photoId));
+        setRandomId(Math.ceil(Math.random() * photos.length));
       };
       fetchPhotoManifest();
     },
@@ -20,26 +21,20 @@ export default ({ photoId }) => {
   if (Object.keys(photo).length === 0) return null;
   if (photo === undefined) window.location = "/";
 
+
+
   return html`
-    <${Fragment}>
-      <a
-        href="/"
-        class="home-icon"
-      >
-        <span class="material-icons-outlined">
-          arrow_back
-        </span>
-      </a>
-      <aside class="details">
-        <section>
-          <h4>${photo.title}</h4>
-          <p>
-            <b>Camera: </b>${photo.camera}
-            <br/>
-            <b>Lens: </b>${photo.lens}
-          </p>
-        </section>
-      </aside>
+    <div class="app">
+      <ul class="nav">
+        <li class="nav__item">
+          <a href="/" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="/details?photo=${randomId}" class="nav__link">Random</a>
+        </li>
+        <li class="nav-item">
+        </li>
+      </ul>
       <section class="photo-container">
         <img
           class="letterbox"
@@ -47,6 +42,23 @@ export default ({ photoId }) => {
           src="../img/full/${photoId}.jpg"
         />
       </section>
-    </${Fragment}>
+      <section class="info">
+        <p class="info__text">
+          <b>${photo.title}</b>
+          <br/>
+          ${photo.camera} w/ ${photo.lens}
+        </p>
+        <ul class="info__actions">
+          <li class="info__action">
+            <a class="info__action--link" href="/img/full/${photo.id}.jpg">
+              <span class="material-icons info__action-icon">fullscreen</span> download full size
+            </a>
+          </li>
+          <li class="info__action">
+            <span class="material-icons info__action-icon">place</span> location
+          </li>
+        </ul>
+      </section>
+    </div>
   `;
 };

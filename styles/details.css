@@ -1,16 +1,40 @@
-body {
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100vh;
+/* TODO: do some DRYing up in here */
+
+:root {
+  --color__dark-mode-text: rgb(244, 253, 252);
 }
 
-.home-icon {
+/* TOOD: accessibilty! */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  background-color: black;
+  font-size: 1.2rem;
+}
+
+.app {
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
   position: absolute;
-  right: 2vw;
-  top: 2vw;
-  color: gainsboro;
+  top: 1vw;
+  left: 1vw;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--color__dark-mode-text);
+}
+
+.nav__link:hover {
+  font-weight: 600;
 }
 
 .material-icons-outlined {
@@ -18,8 +42,8 @@ body {
 }
 
 .photo-container {
-  width: 75%;
-  height: 100vh;
+  width: 85%;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,11 +55,25 @@ body {
   object-fit: contain;
 }
 
-.details {
-  width: 23%;
-  height: 100%;
+.info {
+  width: 60%;
+  color: var(--color__dark-mode-text);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.info__actions {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  color: cornsilk;
+  justify-content: start;
+  list-style: none;
+}
+
+.info__action-icon {
+  vertical-align: bottom;
+}
+
+.info__action:hover {
+  font-weight: 600;
 }
