@@ -3,24 +3,29 @@ body {
 }
 
 .gallery {
-  margin: 3vw auto;
-  width: 85vw;
+  margin: 3vw 15vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3vw;
 }
 
-@media (max-aspect-ratio: 1/1) {
+@media (max-aspect-ratio: 4/3) {
   .gallery {
     grid-template-columns: 1fr 1fr;
     grid-gap: 6vw;
   }
 }
 
+@media (max-aspect-ratio: 10/16) {
+  .gallery {
+    grid-template-columns: 1fr;
+    margin: 6vw 25vw;
+  }
+}
+
 @media (hover: hover) {
   .preview__img--obscured {
-    filter: blur(0.1rem);
-    opacity: 0.9;
+    opacity: 0.5;
   }
 }
 
@@ -36,5 +41,5 @@ body {
   width: 100%;
   object-fit: cover;
   vertical-align: bottom;
-  transition: blur,opacity 0.3s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }

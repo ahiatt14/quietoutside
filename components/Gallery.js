@@ -17,10 +17,10 @@ export default ({
           onMouseOver=${() => setHoveredPreviewId(photo.id)}
           onMouseOut=${() => setHoveredPreviewId(null)}
         >
-        ${html`
           <img
+            loading="lazy"
             src="./img/previews/${photo.id}.jpg"
-            alt="preview ${photo.id}"
+            alt="${photo.title}"
             class="
               preview__img
               ${
@@ -30,7 +30,6 @@ export default ({
               }
             "
           />
-        `}
         </a>
       `)}
     </div>
