@@ -10,7 +10,7 @@ export default ({}) => {
   useEffect(() => {
     if (photos.length > 0) return; 
     const fetchPhotoManifest = async () => {
-      const response = await fetch('quiteoutside.place/photoManifest.json');
+      const response = await fetch('quietoutside.space/photoManifest.json');
       const photos = await response.json();
       setPhotos(photos);
     };
