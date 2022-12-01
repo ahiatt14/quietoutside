@@ -19,7 +19,7 @@ body {
 .monochrome-icon {
   font-size: 200%;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 4vw;
   left: 4vw;
 }
@@ -65,7 +65,7 @@ body {
   width: 100%;
   object-fit: cover;
   vertical-align: bottom;
-  transition: opacity 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .preview__img--monochrome {

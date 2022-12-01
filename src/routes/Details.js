@@ -26,16 +26,6 @@ export default ({ photoId }) => {
 
   return html`
     <div class="app">
-      <!-- <ul class="nav">
-        <li class="nav__item">
-          <a href="/" class="nav__link">Home</a>
-        </li>
-        <li class="nav__item">
-          <a href="/details?photo=${randomId}" class="nav__link">Random</a>
-        </li>
-        <li class="nav-item">
-        </li>
-      </ul> -->
       <section class="photo-container">
         <img
           class="photo letterbox ${monochrome ? "photo--monochrome" : ""}"
