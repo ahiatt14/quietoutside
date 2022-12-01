@@ -5,7 +5,6 @@ body {
 .app {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
-  padding: 4vw;
 }
 
 .grid-center-gallery {

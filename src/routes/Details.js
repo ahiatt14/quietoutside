@@ -1,7 +1,8 @@
 import { html } from "https://unpkg.com/htm/preact/index.mjs?module";
 import { useState, useEffect } from 'https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module';
+import useLocalStorage from "../hooks/useLocalStorage.js";
 
-export default ({ photoId, monochrome }) => {
+export default ({ photoId }) => {
 
   const [photo, setPhoto] = useState({});
   const [randomId, setRandomId] = useState(1);
@@ -18,10 +19,10 @@ export default ({ photoId, monochrome }) => {
     [photoId]
   );
 
+  const [monochrome, setMonochrome] = useLocalStorage("monochrome");
+
   if (Object.keys(photo).length === 0) return null;
   if (photo === undefined) window.location = "/";
-
-
 
   return html`
     <div class="app">
@@ -55,7 +56,11 @@ export default ({ photoId, monochrome }) => {
             </a>
           </li>
           <li class="info__action">
-            <a class="info__action--link" target="_blank" href="https://www.google.com/maps/place/${photo.latitude},${photo.longitude}">
+            <a
+              class="info__action--link"
+              target="_blank"
+              href="https://www.google.com/maps/place/${photo.latitude},${photo.longitude}"
+            >
               <span class="material-icons info__action-icon">place</span> location
             </a>
           </li>

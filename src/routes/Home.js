@@ -1,6 +1,5 @@
 import { html } from "https://unpkg.com/htm/preact/index.mjs?module";
 import { useState, useEffect } from 'https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module';
-
 import useLocalStorage from "../hooks/useLocalStorage.js";
 import Gallery from '../components/Gallery.js';
 

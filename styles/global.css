@@ -11,6 +11,10 @@ html {
   box-sizing: inherit;
 }
 
+.app {
+  padding: 4vw;
+}
+
 .copyright-notice {
   font-size: 0.8rem;
   color: white;
