@@ -1,7 +1,7 @@
 import { html } from "https://unpkg.com/htm/preact/index.mjs?module";
 import { useState, useEffect } from 'https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module';
 
-export default ({ photoId }) => {
+export default ({ photoId, monochrome }) => {
 
   const [photo, setPhoto] = useState({});
   const [randomId, setRandomId] = useState(1);
@@ -25,7 +25,7 @@ export default ({ photoId }) => {
 
   return html`
     <div class="app">
-      <ul class="nav">
+      <!-- <ul class="nav">
         <li class="nav__item">
           <a href="/" class="nav__link">Home</a>
         </li>
@@ -34,10 +34,10 @@ export default ({ photoId }) => {
         </li>
         <li class="nav-item">
         </li>
-      </ul>
+      </ul> -->
       <section class="photo-container">
         <img
-          class="letterbox"
+          class="photo letterbox ${monochrome ? "photo--monochrome" : ""}"
           alt="${photo.title}"
           src="../img/full/${photoId}.jpg"
         />

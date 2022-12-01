@@ -6,7 +6,6 @@
   <title>Quiet Outside</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
@@ -20,13 +19,21 @@
   <script type="module">
     import { h, render } from 'https://unpkg.com/preact@latest?module';
     import htm from "https://unpkg.com/htm@latest/dist/htm.module.js?module";
-    import Details from './routes/Details.js';
+    import Details from './src/routes/Details.js';
 
     const html = htm.bind(h);
 
     const params = new URLSearchParams(window.location.search);
     const photoId = parseInt(params.get("photo"));
+    const monochrome = parseInt(params.get("monochrome"));
 
-    render(html`<${Details} photoId=${photoId} />`, document.body);
+    render(html`
+        <${Details}
+          photoId=${photoId}
+          monochrome=${monochrome}
+        />
+      `,
+      document.body
+    );
   </script>
 </html>

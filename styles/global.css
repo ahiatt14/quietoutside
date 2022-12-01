@@ -1,5 +1,6 @@
 :root {
   --color__dark-mode-text: rgb(244, 253, 252);
+  --color__medium-grey: rgb(119, 121, 121);
 }
 
 html {
@@ -14,4 +15,8 @@ html {
   font-size: 0.8rem;
   color: white;
   text-align: center;
+}
+
+.material-icons {
+  user-select: none;
 }

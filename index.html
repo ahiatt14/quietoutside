@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Quiet Outside</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./libs/normalize.css" />
   <link rel="stylesheet" href="./styles/global.css" />
   <link rel="stylesheet" href="./styles/home.css" />
@@ -12,10 +13,19 @@
   <script type="module">
     import { h, render } from 'https://unpkg.com/preact@latest?module';
     import htm from "https://unpkg.com/htm@latest/dist/htm.module.js?module";
-    import Home from './routes/Home.js';
+    import Home from './src/routes/Home.js';
 
     const html = htm.bind(h);
 
-    render(html`<${Home}/>`, document.body);
+    const params = new URLSearchParams(window.location.search);
+    const monochrome = parseInt(params.get("monochrome"));
+
+    render(html`
+        <${Home}
+          monochrome=${monochrome}
+        />
+      `,
+      document.body
+    );
   </script>
 </html>

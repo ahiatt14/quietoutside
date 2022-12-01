@@ -2,8 +2,34 @@ body {
   background-color: black;
 }
 
+.app {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  padding: 4vw;
+}
+
+.grid-center-gallery {
+  grid-column: 2 / span 1;
+}
+
+.left-sidebar {
+  grid-column: 1 / span 1;
+  color: var(--color__dark-mode-text);
+}
+
+.monochrome-icon {
+  font-size: 200%;
+  cursor: pointer;
+  position: absolute;
+  top: 4vw;
+  left: 4vw;
+}
+
+.monochrome-icon:hover {
+  font-weight: bolder;
+}
+
 .gallery {
-  margin: 3vw 15vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3vw;
@@ -19,7 +45,6 @@ body {
 @media (max-aspect-ratio: 10/16) {
   .gallery {
     grid-template-columns: 1fr;
-    margin: 6vw 25vw;
   }
 }
 
@@ -42,4 +67,12 @@ body {
   object-fit: cover;
   vertical-align: bottom;
   transition: opacity 0.2s ease-in-out;
+}
+
+.preview__img--monochrome {
+  filter: grayscale(1);
+}
+
+.home-footer {
+  grid-column: 1 / span 3;
 }
