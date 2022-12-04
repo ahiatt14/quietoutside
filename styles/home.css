@@ -2,32 +2,6 @@ body {
   background-color: black;
 }
 
-.app {
-  display: grid;
-  grid-template-columns: 1fr 7fr 1fr;
-}
-
-.grid-center-gallery {
-  grid-column: 2 / span 1;
-}
-
-.left-sidebar {
-  grid-column: 1 / span 1;
-  color: var(--color__dark-mode-text);
-}
-
-.monochrome-icon {
-  font-size: 200%;
-  cursor: pointer;
-  position: fixed;
-  top: 4vw;
-  left: 4vw;
-}
-
-.monochrome-icon:hover {
-  font-weight: bolder;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

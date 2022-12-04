@@ -1,65 +1,17 @@
-/* TODO: make responsive / vertical mobile layout */
-/* TODO: do some DRYing up in here */
-/* TOOD: accessibilty pass*/
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-body {
-  background-color: black;
-  font-size: 1.2rem;
-}
-
-.app {
-  font-family: 'Nunito', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media (max-aspect-ratio: 1/1) {
-  .app {
-    padding-top: 3vw;
-  }
-}
-
-.nav {
-  position: absolute;
-  top: 1vw;
-  left: 1vw;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: var(--color__dark-mode-text);
-}
-
-.nav__link:hover {
-  font-weight: 600;
-}
-
-.material-icons-outlined {
-  font-size:x-large;
-}
+/* TODO: tighten up vertical/mobile layout */
 
 .photo-container {
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1vh;
 }
 
-/* @media (max-aspect-ratio: 1/1) {
-  .photo-container {
-    
-  }
-} */
-
-.letterbox {
-  width: 100%;
-  height: 100%;
+.photo {
+  max-width: 100%;
+  max-height: 80vh;
   object-fit: contain;
+  transition: all 0.2s ease-in-out;
 }
 
 .photo--monochrome {
@@ -71,14 +23,22 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
-  margin: 1rem;
 }
 
 .info__text {
-  margin-right: 3rem;
+  margin-right: 2vw;
   margin-block: 0;
+}
+
+@media (max-aspect-ratio: 3/4) {
+  .info {
+    justify-content: flex-start;
+  }
+  .info__text {
+    margin-bottom: 2vh;
+  }
 }
 
 .info__actions {

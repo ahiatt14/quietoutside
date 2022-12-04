@@ -6,6 +6,7 @@ import Gallery from '../components/Gallery.js';
 export default ({}) => {
 
   const [photos, setPhotos] = useState([]);
+  const [monochrome, setMonochrome] = useLocalStorage("monochrome");
 
   useEffect(() => {
     if (photos.length > 0) return; 
@@ -17,22 +18,29 @@ export default ({}) => {
     fetchPhotoManifest();
   });
 
-  const [monochrome, setMonochrome] = useLocalStorage("monochrome");
-
+  // TODO: make the monochrome icon its own comp
   return html`
     <div class="app">
       <aside class="left-sidebar">
-        <span
-          class="material-icons monochrome-icon"
-          onclick=${() => setMonochrome(!monochrome)}
-        >
-          monochrome_photos
-        </span>
+        <ul class="sidebar-menu">
+          <li>
+            <span
+              class="
+                material-icons
+                sidebar-menu__icon
+                ${monochrome ? "sidebar-menu__icon--lit" : ""}
+              "
+              onclick=${() => setMonochrome(!monochrome)}
+            >
+              contrast
+            </span>
+          </li>
+        </ul>
       </aside>
       <${Gallery}
         photos=${photos}
         monochrome=${monochrome}
-        className="grid-center-gallery"
+        className="main-content"
       />
       <footer class="home-footer">
         <p class="copyright-notice">${`© 2020-2022 Alex Hiatt`}</p>
