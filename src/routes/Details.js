@@ -1,6 +1,8 @@
 import { html } from "https://unpkg.com/htm/preact/index.mjs?module";
 import useLocalStorage from "../hooks/useLocalStorage.js";
 import useFetchedState from "../hooks/useFetchedState.js";
+import CopyrightNotice from "../components/CopyrightNotice.js";
+import MonochromeIcon from "../components/MonochromeIcon.js";
 
 export default ({ photoId }) => {
 
@@ -27,16 +29,10 @@ export default ({ photoId }) => {
             </a>
           </li>
           <li>
-            <span
-              class="
-                material-icons
-                sidebar-menu__icon
-                ${monochrome ? "sidebar-menu__icon--lit" : ""}
-              "
-              onclick=${() => setMonochrome(!monochrome)}
-            >
-              contrast
-            </span>
+            <${MonochromeIcon}
+              monochrome=${monochrome}
+              onClick=${() => setMonochrome(!monochrome)}
+            />
           </li>
           <li>
             <a href="/details?photo=${randomId}">
@@ -78,7 +74,7 @@ export default ({ photoId }) => {
             </li>
           </ul>
         </section>
-        <p class="copyright-notice">${`© 2020-2022 Alex Hiatt`}</p>
+        <${CopyrightNotice} />
       </section>
     </div>
   `;

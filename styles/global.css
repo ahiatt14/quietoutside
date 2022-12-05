@@ -4,7 +4,7 @@
 :root {
   --color__dark-mode-text: rgb(244, 253, 252);
   --color__medium-grey: rgb(197, 203, 203);
-  --color__forest-green: rgb(115, 240, 119);
+  --color__lit-green: rgb(115, 240, 119);
   --app-padding: 2vw;
 
   font-family: 'Nunito', sans-serif;
@@ -88,6 +88,6 @@ body {
   color: var(--color__dark-mode-text);
 }
 
-.sidebar-menu__icon--lit {
-  color: var(--color__forest-green);
+.sidebar-menu__icon--lit-green {
+  color: var(--color__lit-green);
 }
