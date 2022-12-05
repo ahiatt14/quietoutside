@@ -1,0 +1,1 @@
+export const idsFromPhotos = (photos) => photos.map(photo => photo.id);

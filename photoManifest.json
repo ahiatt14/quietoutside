@@ -130,16 +130,6 @@
     "longitude": -97.77363225506384
   },
   {
-    "id": 14,
-    "title": "Bald-Faced Hornet",
-    "width": 1889,
-    "height": 1063,
-    "camera": "Panasonic GX1",
-    "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
-    "latitude": 43.60693135988396,
-    "longitude": -84.28580350228009
-  },
-  {
     "id": 15,
     "title": "Curled Up Fern",
     "width": 4575,
@@ -208,25 +198,5 @@
     "lens": "Olympus M.Zuiko Fixed 45mm F1.8",
     "latitude": 43.61797109635435,
     "longitude": -84.17233303645942
-  },
-  {
-    "id": 22,
-    "title": "Apartment Courtyard, Austin",
-    "width": 4592,
-    "height": 1531,
-    "camera": "Panasonic GX1",
-    "lens": "SLR Magic HyperPrime Fixed 10mm T2.1",
-    "latitude": 30.283828352591925,
-    "longitude": -97.71557756399658
-  },
-  {
-    "id": 23,
-    "title": "Stormhead Over North Austin 2",
-    "width": 4576,
-    "height": 1915,
-    "camera": "Panasonic GX1",
-    "lens": "SLR Magic HyperPrime Fixed 10mm T2.1",
-    "latitude": 30.29753164493532,
-    "longitude": -97.70705412863036
   }
 ]

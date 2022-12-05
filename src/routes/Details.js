@@ -10,8 +10,6 @@ export default ({ photoId }) => {
   const [monochrome, setMonochrome] = useLocalStorage("monochrome");
   const [randomId, setRandomId] = useState(1);
 
-  // TODO: make a useFetch hook or at least a usePhotoManifest hook
-  // (fn that takes a photoId and returns a fn that takes photos)
   useEffect(() => {
       const fetchPhotoManifest = async () => {
         const response = await fetch('/photoManifest.json');
@@ -27,7 +25,6 @@ export default ({ photoId }) => {
   if (Object.keys(photo).length === 0) return null;
   if (photo === undefined) window.location = "/";
 
-  // TODO: make the monochrome icon its own comp
   return html`
     <div class="app">
       <aside class="left-sidebar">

@@ -9,16 +9,14 @@ export default ({}) => {
   const [monochrome, setMonochrome] = useLocalStorage("monochrome");
 
   useEffect(() => {
-    if (photos.length > 0) return; 
     const fetchPhotoManifest = async () => {
       const response = await fetch('/photoManifest.json');
       const photos = await response.json();
       setPhotos(photos);
     };
     fetchPhotoManifest();
-  });
+  }, []);
 
-  // TODO: make the monochrome icon its own comp
   return html`
     <div class="app">
       <aside class="left-sidebar">

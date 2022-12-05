@@ -25,12 +25,10 @@
 
     const params = new URLSearchParams(window.location.search);
     const photoId = parseInt(params.get("photo"));
-    const monochrome = parseInt(params.get("monochrome"));
 
     render(html`
         <${Details}
           photoId=${photoId}
-          monochrome=${monochrome}
         />
       `,
       document.body
