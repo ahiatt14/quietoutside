@@ -1,29 +1,19 @@
 import { html } from "https://unpkg.com/htm/preact/index.mjs?module";
-import { useState, useEffect } from 'https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module';
 import useLocalStorage from "../hooks/useLocalStorage.js";
-
-// TODO: this is getting large enough to de-documentize and componentize
+import useFetchedState from "../hooks/useFetchedState.js";
 
 export default ({ photoId }) => {
 
-  const [photo, setPhoto] = useState({});
+  const { data: photos } = useFetchedState("/photoManifest.json", []);
   const [monochrome, setMonochrome] = useLocalStorage("monochrome");
-  const [randomId, setRandomId] = useState(1);
 
-  useEffect(() => {
-      const fetchPhotoManifest = async () => {
-        const response = await fetch('/photoManifest.json');
-        const photos = await response.json();
-        setPhoto(photos.find(photo => photo.id === photoId));
-        setRandomId(Math.ceil(Math.random() * photos.length));
-      };
-      fetchPhotoManifest();
-    },
-    [photoId]
-  );  
-
-  if (Object.keys(photo).length === 0) return null;
+  if (photos.length === 0) return null;
+  
+  const photo = photos.find(photo => photo.id === photoId);
   if (photo === undefined) window.location = "/";
+
+  const allIds = photos.map(photo => photo.id);
+  const randomId = allIds[Math.floor(Math.random() * allIds.length)];
 
   return html`
     <div class="app">

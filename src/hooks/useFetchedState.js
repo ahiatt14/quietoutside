@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module';
 
-export const DEFAULT_FETCH_STATE = {
+export const DEFAULT_STATE = {
   data: null,
   error: {
     statusCode: null,
@@ -8,12 +8,12 @@ export const DEFAULT_FETCH_STATE = {
   }
 };
 
-export default (
-  resource,
-  defaultState
-) => {
+export default (resource, defaultData) => {
 
-  const [state, setState] = useState(defaultState);
+  const [state, setState] = useState({
+    ...DEFAULT_STATE,
+    data: defaultData
+  });
 
   async function fetchAndSetState() {
 
@@ -23,7 +23,7 @@ export default (
 
       if (!response.ok) {
         setState({
-          ...DEFAULT_FETCH_STATE,
+          ...DEFAULT_STATE,
           error: {
             statusCode: response.status,
             message: response.statusText
@@ -35,14 +35,14 @@ export default (
       const data = await response.json();
 
       setState({
-        ...DEFAULT_FETCH_STATE,
+        ...DEFAULT_STATE,
         data
       });
 
     } catch(err) {
 
       setState({
-        ...DEFAULT_FETCH_STATE,
+        ...DEFAULT_STATE,
         error: {
           statusCode: null,
           message: "A network error occurred."
