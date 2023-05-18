@@ -18,7 +18,7 @@ export default ({}) => {
           <li>
             <${MonochromeIcon}
               monochrome=${monochrome}
-              onClick=${() => setMonochrome(!monochrome)}
+              onClick=${() => setMonochrome(prevMonochrome => !prevMonochrome)}
             />
           </li>
         </ul>

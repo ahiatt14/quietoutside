@@ -31,7 +31,7 @@ export default ({ photoId }) => {
           <li>
             <${MonochromeIcon}
               monochrome=${monochrome}
-              onClick=${() => setMonochrome(!monochrome)}
+              onClick=${() => setMonochrome(prevMonochrome => !prevMonochrome)}
             />
           </li>
           <li>
